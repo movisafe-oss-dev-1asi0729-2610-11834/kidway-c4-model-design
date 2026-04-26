@@ -53,7 +53,9 @@ namespace kidway_c4_model_design
                 new DriverManagementComponentDiagram(this, contextDiagram, containerDiagram);
             RouteManagementComponentDiagram routeManagementComponentDiagram =
                 new RouteManagementComponentDiagram(this, contextDiagram, containerDiagram);
-
+            StudentManagementComponentDiagram studentManagementComponentDiagram =
+                new StudentManagementComponentDiagram(this, contextDiagram, containerDiagram);
+            
             // Generate diagrams
             contextDiagram.Generate();
             containerDiagram.Generate();
@@ -65,6 +67,7 @@ namespace kidway_c4_model_design
             fleetManagementComponentDiagram.Generate();
             driverManagementComponentDiagram.Generate();
             routeManagementComponentDiagram.Generate();
+            studentManagementComponentDiagram.Generate();
             
             // Upload workspace to Structurizr
             StructurizrClient.PutWorkspace(workspaceId, Workspace);
