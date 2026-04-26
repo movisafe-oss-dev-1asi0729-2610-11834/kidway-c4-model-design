@@ -47,6 +47,8 @@ namespace kidway_c4_model_design
                 new SubscriptionPaymentsComponentDiagram(this, contextDiagram, containerDiagram);
             DashboardComponentDiagram dashboardComponentDiagram =
                 new DashboardComponentDiagram(this, contextDiagram, containerDiagram);
+            FleetManagementComponentDiagram fleetManagementComponentDiagram =
+                new FleetManagementComponentDiagram(this, contextDiagram, containerDiagram);
 
             // Generate diagrams
             contextDiagram.Generate();
@@ -56,6 +58,7 @@ namespace kidway_c4_model_design
             userProfilesComponentDiagram.Generate();
             subscriptionPaymentsComponentDiagram.Generate();
             dashboardComponentDiagram.Generate();
+            fleetManagementComponentDiagram.Generate();
 
             
             // Upload workspace to Structurizr
