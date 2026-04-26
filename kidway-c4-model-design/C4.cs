@@ -67,6 +67,8 @@ namespace kidway_c4_model_design
                 new AlertsNotificationsComponentDiagram(this, contextDiagram, containerDiagram);
             IncidentManagementComponentDiagram incidentManagementComponentDiagram =
                 new IncidentManagementComponentDiagram(this, contextDiagram, containerDiagram);
+            AnalyticsReportsComponentDiagram analyticsReportsComponentDiagram =
+                new AnalyticsReportsComponentDiagram(this, contextDiagram, containerDiagram);
             
             // Generate diagrams
             contextDiagram.Generate();
@@ -86,6 +88,7 @@ namespace kidway_c4_model_design
             attendanceTrackingComponentDiagram.Generate();
             alertsNotificationsComponentDiagram.Generate();
             incidentManagementComponentDiagram.Generate();
+            analyticsReportsComponentDiagram.Generate();
             
             // Upload workspace to Structurizr
             StructurizrClient.PutWorkspace(workspaceId, Workspace);
