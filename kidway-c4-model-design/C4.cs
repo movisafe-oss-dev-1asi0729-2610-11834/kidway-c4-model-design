@@ -63,6 +63,8 @@ namespace kidway_c4_model_design
                 new TripManagementComponentDiagram(this, contextDiagram, containerDiagram);
             AttendanceTrackingComponentDiagram attendanceTrackingComponentDiagram =
                 new AttendanceTrackingComponentDiagram(this, contextDiagram, containerDiagram);
+            AlertsNotificationsComponentDiagram alertsNotificationsComponentDiagram =
+                new AlertsNotificationsComponentDiagram(this, contextDiagram, containerDiagram);
             
             // Generate diagrams
             contextDiagram.Generate();
@@ -80,6 +82,7 @@ namespace kidway_c4_model_design
             realTimeTrackingComponentDiagram.Generate();
             tripManagementComponentDiagram.Generate();
             attendanceTrackingComponentDiagram.Generate();
+            alertsNotificationsComponentDiagram.Generate();
             
             // Upload workspace to Structurizr
             StructurizrClient.PutWorkspace(workspaceId, Workspace);
