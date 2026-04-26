@@ -39,11 +39,14 @@ namespace kidway_c4_model_design
                     new ContainerDiagram(this, contextDiagram);
             WebApplicationComponentDiagram webApplicationComponentDiagram =
                     new WebApplicationComponentDiagram(this, contextDiagram, containerDiagram);
+            IdentityAccessComponentDiagram identityAccessComponentDiagram =
+                new IdentityAccessComponentDiagram(this, contextDiagram, containerDiagram);
 
             // Generate diagrams
             contextDiagram.Generate();
             containerDiagram.Generate();
             webApplicationComponentDiagram.Generate();
+            identityAccessComponentDiagram.Generate();
 
             
             // Upload workspace to Structurizr
