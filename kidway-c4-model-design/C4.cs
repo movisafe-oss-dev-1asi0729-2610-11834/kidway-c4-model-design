@@ -59,6 +59,8 @@ namespace kidway_c4_model_design
                 new AssignmentManagementComponentDiagram(this, contextDiagram, containerDiagram);
             RealTimeTrackingComponentDiagram realTimeTrackingComponentDiagram =
                 new RealTimeTrackingComponentDiagram(this, contextDiagram, containerDiagram);
+            TripManagementComponentDiagram tripManagementComponentDiagram =
+                new TripManagementComponentDiagram(this, contextDiagram, containerDiagram);
             
             // Generate diagrams
             contextDiagram.Generate();
@@ -74,6 +76,7 @@ namespace kidway_c4_model_design
             studentManagementComponentDiagram.Generate();
             assignmentManagementComponentDiagram.Generate();
             realTimeTrackingComponentDiagram.Generate();
+            tripManagementComponentDiagram.Generate();
             
             // Upload workspace to Structurizr
             StructurizrClient.PutWorkspace(workspaceId, Workspace);
